@@ -1,0 +1,28 @@
+
+<Phys>ics definitions:
+__physDefault 		- normal collision
+__physNone 		- no collision
+__physProxyNoDraw	- Normal collision but will be hidden
+__physNoCollide		- Touch bending
+__physObstruct		- AI can't see through, but no collision
+
+- Any objects in the scene that you want to make into your object, select and go to the
+	CryBlend menu and select 'Add CryExportNode'.  Type the <name> of your object.
+
+- (Make any .tif textures in the directory you are going to use)
+
+- Name materials with the following convention:
+	<name>__<#>__<material name>__<phys>
+
+- UV unwrap the model
+
+- Apply image to the model in Image Editor.  This image must be a .tif in the directory!
+
+- CryBlend menu: Export To Game
+	- CGF
+	- Do Not Merge Nodes
+	- Run RC and Do Materials
+
+- Convert the .tif file to .dds using the Resource Compiler (use the old one!)
+
+- The <name>.cgf, <name>.mtl, and <name>.dds files are the ones you want.
