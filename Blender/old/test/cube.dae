@@ -1,0 +1,203 @@
+<?xml version="1.0" ?>
+<collada version="1.4.1" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>CryENGINE exporter for Blenderv2.69 (sub 0) by angjminer, extended by Duo Oratar</authoring_tool>
+    </contributor>
+    <created/>
+    <modified/>
+    <unit meter="1" name="meter"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_cameras/>
+  <library_lights/>
+  <library_images/>
+  <library_effects>
+    <effect id="cube__1__main__physDefault_fx">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">  0.0 0.0 0.0 1.0 </color>
+            </emission>
+            <ambient>
+              <color sid="ambient">  1.0 1.0 1.0 1.0 </color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">  0.800000011920929 0.0 0.029529953375458717 1.0 </color>
+            </diffuse>
+            <specular>
+              <color sid="specular">  1.0 1.0 1.0 1.0 </color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="cube__1__main__physDefault" name="cube__1__main__physDefault">
+      <instance_effect url="#cube__1__main__physDefault_fx"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="cube">
+      <mesh>
+        <source id="cube-positions">
+          <float_array count="24" id="cube-positions-array">-1.000000 -1 -1.000000 -1.000000 1 -1.000000 1.000000 1 -1.000000 1.000000 -1 -1.000000 -1.000000 -1 1.000000 -1.000000 1 1.000000 1.000000 1 1.000000 1.000000 -1 1.000000</float_array>
+          <technique_common>
+            <accessor count="8" source="#cube-positions-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cube-normals">
+          <float_array count="18" id="cube-normals-array">-1.000000 0.000000 -0.000000 0.000000 1.000000 -0.000000 1.000000 0.000000 -0.000000 0.000000 -1.000000 -0.000000 -0.000000 0.000000 -1.000000 -0.000000 0.000000 1.000000 </float_array>
+          <technique_common>
+            <accessor count="6" source="cube-normals-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cube-UVMap-0">
+          <float_array count="48" id="cube-UVMap-0-array">0.000000 0.000000 1.000000 0.000000 1.000000 1.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 1.000000 1.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 1.000000 1.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 1.000000 1.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 1.000000 1.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 1.000000 1.000000 0.000000 1.000000 </float_array>
+          <technique_common>
+            <accessor count="24" source="#cube-UVMap-0-array" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source/>
+        <vertices id="cube-vertices">
+          <input semantic="POSITION" source="#cube-positions"/>
+        </vertices>
+        <polylist count="6" material="cube__1__main__physDefault">
+          <input offset="0" semantic="VERTEX" source="#cube-vertices"/>
+          <input offset="1" semantic="NORMAL" source="#cube-normals"/>
+          <input offset="2" semantic="TEXCOORD" set="0" source="#cube-UVMap-0"/>
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>1 0 0 0 0 1 4 0 2 5 0 3 5 1 4 6 1 5 2 1 6 1 1 7 6 2 8 7 2 9 3 2 10 2 2 11 0 3 12 3 3 13 7 3 14 4 3 15 0 4 16 1 4 17 2 4 18 3 4 19 7 5 20 6 5 21 5 5 22 4 5 23 </p>
+        </polylist>
+        <extra>
+          <technique profile="MAYA">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_animation_clips/>
+  <library_animations/>
+  <library_visual_scenes>
+    <visual_scene id="scene" name="scene">
+      <node id="CryExportNode_multipleObjects">
+        <node id="Cube">
+          <translate sid="translation">1.2174 1.2514 0.1481</translate>
+          <rotate sid="rotation_Z">0 0 1 0.0</rotate>
+          <rotate sid="rotation_Y">0 1 0 0.0</rotate>
+          <rotate sid="rotation_X">1 0 0 0.0</rotate>
+          <scale sid="scale">  1.0 1.0 1.0 </scale>
+          <instance_geometry url="#Cube">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="multipleObjects__2__cube__physDefault" target="#multipleObjects__2__cube__physDefault">
+                  <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="UVMap"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+          <extra>
+            <technique profile="CryEngine">
+              <properties/>
+            </technique>
+          </extra>
+        </node>
+        <node id="Icosphere">
+          <translate sid="translation">0.0000 0.0000 0.0000</translate>
+          <rotate sid="rotation_Z">0 0 1 0.0</rotate>
+          <rotate sid="rotation_Y">0 1 0 0.0</rotate>
+          <rotate sid="rotation_X">1 0 0 0.0</rotate>
+          <scale sid="scale">  1.6489323377609253 1.6489323377609253 1.6489323377609253 </scale>
+          <instance_geometry url="#Icosphere">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="multipleObjects__1__ball__physDefault" target="#multipleObjects__1__ball__physDefault">
+                  <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="UVMap"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+          <extra>
+            <technique profile="CryEngine">
+              <properties/>
+            </technique>
+          </extra>
+        </node>
+        <extra>
+          <technique profile="CryEngine">
+            <properties>
+              fileType=cgf
+              DoNotMerge
+            </properties>
+          </technique>
+        </extra>
+      </node>
+      <node id="CryExportNode_test">
+        <node id="cube">
+          <translate sid="translation">0.0000 0.0000 0.0000</translate>
+          <rotate sid="rotation_Z">0 0 1 0.0</rotate>
+          <rotate sid="rotation_Y">0 1 0 0.0</rotate>
+          <rotate sid="rotation_X">1 0 0 0.0</rotate>
+          <scale sid="scale">  1.0 1.0 1.0 </scale>
+          <instance_geometry url="#cube">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="cube__1__main__physDefault" target="#cube__1__main__physDefault">
+                  <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="UVMap"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+          <extra>
+            <technique profile="CryEngine">
+              <properties/>
+            </technique>
+          </extra>
+        </node>
+        <extra>
+          <technique profile="CryEngine">
+            <properties>
+              fileType=cgf
+              DoNotMerge
+            </properties>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#scene"/>
+  </scene>
+</collada>
