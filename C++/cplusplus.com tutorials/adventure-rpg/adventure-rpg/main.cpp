@@ -1,20 +1,8 @@
-// AdventureRPG.cpp : Defines the entry point for the console application.
-//
-
 #include "stdafx.h"
-#include <sstream>
-#include <iostream>
-#include <string>
-
-using std::string;
-using std::cout;
-using std::getline;
-using std::cin;
-
-#include "items.h"
 
 item playerItems[1000];
 int playerHP = 100;
+int playerHunger = 100;
 int playerHPMax = 100;
 int playerCapacity = 100;
 int playerGold = 0;
