@@ -88,5 +88,17 @@ namespace item
 			std::fill_n(params, 5, itemParam());
 			params[0] = iParam;
 		}
+
+		Item(std::string iName, itemType iType, int iValue, float iWeight, int iCondition, itemParam iParam)
+		{
+			name = iName;
+			type = iType;
+			value = iValue;
+			weight = iWeight;
+			condition = iCondition;
+			conditionMax = iCondition;
+			std::fill_n(params, 5, itemParam());
+			params[0] = iParam;
+		}
 	};
 }

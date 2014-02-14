@@ -9,8 +9,6 @@
 #include <iostream>
 #include <string>
 
-#include "item.h"
-
 using std::string;
 using std::cout;
 using std::getline;
