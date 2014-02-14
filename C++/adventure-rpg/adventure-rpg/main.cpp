@@ -4,7 +4,7 @@
 
 namespace player
 {
-	item inventory[10000];
+	item::Item inventory[10000];
 	unsigned short health = 100;
 	unsigned short healthMax = 100;
 	unsigned short capacity = 100;
@@ -41,7 +41,7 @@ namespace player
 		cout << "     HP: " << health << "\n";
 	}
 
-	void itemsAdd(item item, unsigned short quantity)
+	void itemsAdd(item::Item item, unsigned short quantity)
 	{
 		cout << "You obtained " << quantity << "x " << item.name << "!\n";
 		for (int i = 0; i < 10000; i++)
@@ -53,7 +53,7 @@ namespace player
 			}
 		}
 	}
-	void itemsAdd(item item)
+	void itemsAdd(item::Item item)
 	{
 		itemsAdd(item, 1);
 	}
