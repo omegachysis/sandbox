@@ -10,7 +10,6 @@
 #include <string>
 
 #include "item.h"
-#include "items.h"
 
 using std::string;
 using std::cout;
