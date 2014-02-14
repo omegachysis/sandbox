@@ -49,7 +49,9 @@ namespace player
 			if (inventory[i].name == "")
 			{
 				inventory[i] = item;
-				break;
+				quantity--;
+				if (quantity == 0)
+					break;
 			}
 		}
 	}

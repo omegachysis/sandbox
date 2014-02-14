@@ -1,6 +1,6 @@
 #include "stdafx.h"
 
-#include "game.h"
+#include "main.h"
 
 // Pause and wait for the user to press 'enter' to continue
 void beat()
@@ -11,7 +11,10 @@ void beat()
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	player::itemsAdd(items::apple);
+	player::itemsAdd(items::apple, 5);
+	beat();
+
+	player::itemsAdd(items::ironSword);
 	beat();
 
 	player::heal(20000);
