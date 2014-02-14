@@ -11,10 +11,13 @@ void beat()
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	player::itemsAdd(items::apple, 5);
+	player::itemAdd(items::apple, 5);
 	beat();
 
-	player::itemsAdd(items::ironSword);
+	player::itemAdd(items::ironSword);
+	beat();
+
+	player::itemUse("apple");
 	beat();
 
 	player::heal(20000);
