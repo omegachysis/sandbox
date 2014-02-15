@@ -26,7 +26,7 @@ void center(string s)
 }
 
 // Print a new line
-void nline()
+void nl()
 {
 	cout << "\n";
 }
