@@ -81,6 +81,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="flow.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="item.h" />
     <ClInclude Include="items.h" />
