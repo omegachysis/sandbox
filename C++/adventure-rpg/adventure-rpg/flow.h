@@ -15,13 +15,14 @@ void beat()
 void hline()
 {
 	// 50 units wide
-	cout << "--------------------------------------------------\n";
+	cout << string(50, '-') << "\n";
 }
 
 // Print a string to std::cout centered to fit 50 units.
 void center(string s)
 {
-
+	int buffer = (50 - s.length()) / 2;
+	cout << string(buffer, ' ') << s << string(buffer, ' ') << "\n";
 }
 
 // Print a new line

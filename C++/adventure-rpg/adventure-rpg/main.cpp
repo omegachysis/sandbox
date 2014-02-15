@@ -6,8 +6,8 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 	nline();
 	hline();
-	cout << " * Welcome to Adventure RPG! * \n";
-	cout << "     -- Programmed in C++ --   \n";
+	center(" * Welcome to Adventure RPG! * ");
+	center("     -- Programmed in C++ --   ");
 	hline();
 	nline();
 	beat();
