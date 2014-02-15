@@ -78,6 +78,7 @@
   <ItemGroup>
     <ClInclude Include="flow.h" />
     <ClInclude Include="item.h" />
+    <ClInclude Include="itemdb.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="player.h" />
   </ItemGroup>

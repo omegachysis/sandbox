@@ -1,6 +1,9 @@
 #include "main.h"
 #include "player.h"
 #include "flow.h"
+#include "itemdb.h"
+
+using namespace flow;
 
 int main()
 {

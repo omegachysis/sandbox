@@ -44,6 +44,9 @@ namespace item
 		ItemParam params[5];
 
 		Item();
+		Item(string name, itemType type, gold value, float weight,
+			short condition, short conditionMax, ItemParam params[5]);
+		Item(string name, itemType type, gold value, float weight, ItemParam param);
 	};
 
 }

@@ -19,6 +19,7 @@ struct Player
 	short itemIndexByName(string name);
 	void itemUse(unsigned int index);
 	void itemUse(string name);
+	bool hasItem(string name);
 	void itemAdd(item::Item item, unsigned int quantity);
 	void itemAdd(item::Item item);
 	void kill();
