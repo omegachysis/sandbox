@@ -1,5 +1,4 @@
 #include "stdafx.h"
-
 #include "main.h"
 
 // Pause and wait for the user to press 'enter' to continue
@@ -9,6 +8,7 @@ void beat()
 	getline(cin, _end);
 }
 
+// Entry point for the program.  Start the game here.
 int _tmain(int argc, _TCHAR* argv[])
 {
 	player::itemAdd(items::apple, 5);

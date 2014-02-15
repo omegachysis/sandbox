@@ -1,7 +1,11 @@
 #pragma once
 #include "stdafx.h"
 
+// The item database!
+
 using namespace item;
+
+// remember: *value* in gold, then *weight*, and then [*condition*]
 
 namespace items
 {

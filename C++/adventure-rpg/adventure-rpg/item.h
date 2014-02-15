@@ -1,7 +1,13 @@
 #pragma once
 
+// Contains information relating to the item structures.
+
+typedef signed int gold;
+
 namespace item
 {
+	// Describes the category an item will be considered as.
+	//   This defines critical portions of interactivity.
 	enum itemType {
 		typeNone,
 		typeWeapon,
@@ -11,7 +17,7 @@ namespace item
 		typeMisc,
 	};
 
-	// Item Params define the effects of using or equipping certain items.  
+	// Item Params define the effects of using or equipping certain items.
 	//  Each item will have an array of Params to define its uses.
 	enum paramType {
 		paramNone,
@@ -34,13 +40,14 @@ namespace item
 			value = 0.0;
 		}
 	};
+
 	struct Item {
-		std::string name;
+		std::string name;		// all lower case if possible!
 		itemType type;
-		unsigned short value;
+		gold value;				// signed integer value
 		float weight;
-		short condition;		// The current number of uses left
-		short conditionMax;	// The maximum number of uses this item can have
+		short condition;		// current number of uses left
+		short conditionMax;		// maximum number of uses this item can have
 		itemParam params[5];
 
 		Item()
@@ -54,7 +61,7 @@ namespace item
 			std::fill_n(params, 5, itemParam());
 		}
 
-		Item(std::string iName, itemType iType, int iValue, float iWeight, int iCondition, int iConditionMax,
+		Item(std::string iName, itemType iType, gold iValue, float iWeight, int iCondition, int iConditionMax,
 			itemParam iParams[5])
 		{
 			name = iName;
@@ -66,7 +73,7 @@ namespace item
 			memcpy(params, iParams, sizeof(params));
 		}
 
-		Item(std::string iName, itemType iType, int iValue, float iWeight)
+		Item(std::string iName, itemType iType, gold iValue, float iWeight)
 		{
 			name = iName;
 			type = iType;
@@ -77,7 +84,7 @@ namespace item
 			std::fill_n(params, 5, itemParam());
 		}
 
-		Item(std::string iName, itemType iType, int iValue, float iWeight, itemParam iParam)
+		Item(std::string iName, itemType iType, gold iValue, float iWeight, itemParam iParam)
 		{
 			name = iName;
 			type = iType;
@@ -89,7 +96,7 @@ namespace item
 			params[0] = iParam;
 		}
 
-		Item(std::string iName, itemType iType, int iValue, float iWeight, int iCondition, itemParam iParam)
+		Item(std::string iName, itemType iType, gold iValue, float iWeight, int iCondition, itemParam iParam)
 		{
 			name = iName;
 			type = iType;
