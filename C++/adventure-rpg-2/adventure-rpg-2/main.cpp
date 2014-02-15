@@ -1,9 +1,10 @@
-#include "stdafx.h"
 #include "main.h"
+#include "player.h"
+#include "flow.h"
 
-// Entry point for the program.  Start the game here.
-int _tmain(int argc, _TCHAR* argv[])
+int main()
 {
+	Player player;
 	nl();
 	hline();
 	center(" * Welcome to Adventure RPG! * ");
@@ -21,7 +22,9 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << " 3 - Load Game\n";
 	hline();
 
-	string choice;
+	beat();
+
+	/*string choice;
 	while (true)
 	{
 		cout << " :: ";
@@ -37,7 +40,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		else
 			cout << "Please enter one of the number choices listed above.\n";
 
-	}
+	}*/
 	/*player::itemAdd(items::apple, 5);
 	beat();
 
