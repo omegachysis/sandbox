@@ -6,7 +6,7 @@
 struct Player
 {
 	float health;
-	unsigned int maxHealth;
+	unsigned int healthMax;
 	int gold;
 	unsigned int capacity;
 	item::Item inventory[10000];
@@ -20,6 +20,7 @@ struct Player
 	void itemUse(unsigned int index);
 	void itemUse(string name);
 	bool hasItem(string name);
+	bool hasItem(unsigned int index);
 	void itemAdd(item::Item item, unsigned int quantity);
 	void itemAdd(item::Item item);
 	void kill();
