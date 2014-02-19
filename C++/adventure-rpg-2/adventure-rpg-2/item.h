@@ -4,6 +4,8 @@
 
 typedef signed int gold;
 
+struct Player;
+
 namespace item
 {
 
@@ -42,6 +44,8 @@ namespace item
 		short condition;
 		short conditionMax;
 		ItemParam params[5];
+
+		void use(Player subject, int index);
 
 		Item();
 		Item(string name, itemType type, gold value, float weight,

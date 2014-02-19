@@ -1,4 +1,5 @@
 #include "player.h"
+#include "item.h"
 
 Player::Player()
 {
@@ -77,28 +78,7 @@ short Player::itemIndexByName(string name)
 // Use/Equip an item by index.
 void Player::itemUse(unsigned int index)
 {
-	item::Item item;
-	item = inventory[index];
-
-	if (item.type == item::typeWeapon)
-		weapon = item;
-	else if (item.type == item::typeAid)
-	{
-		item.condition--;
-		for (int i = 0; i < 5; i++)
-		{
-			item::ItemParam	param = item.params[i];
-			if (param.type == item::paramHeal)
-				heal(param.value);
-			else if (param.type == item::paramDamage)
-				damage(param.value);
-		}
-		if (item.condition == 0)
-		{
-			itemRemove(index);
-			cout << "You consumed 1x " << item.name << ".\n";
-		}
-	}
+	inventory[index].use(*this, index);
 }
 
 // Use/Equip an item by name.  The first item found

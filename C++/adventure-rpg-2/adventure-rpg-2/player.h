@@ -9,11 +9,10 @@ struct Player
 	unsigned int healthMax;
 	int gold;
 	unsigned int capacity;
-	item::Item inventory[10000];
+	item::Item inventory[1000];
 	item::Item weapon;
 
 	Player();
-
 	void damage(float damageHP);
 	void heal(float healHP);
 	void itemRemove(unsigned int index);
