@@ -12,6 +12,8 @@ struct Player
 	item::Item inventory[10000];
 	item::Item weapon;
 
+	Player();
+
 	void damage(float damageHP);
 	void heal(float healHP);
 	void itemRemove(unsigned int index);
