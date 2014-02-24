@@ -2,6 +2,7 @@
 
 #include "main.h"
 #include "item.h"
+#include <vector>
 
 struct Player
 {
@@ -9,7 +10,7 @@ struct Player
 	unsigned int healthMax;
 	int gold;
 	unsigned int capacity;
-	item::Item inventory[1000];
+	std::vector<item::Item> inventory;
 	item::Item weapon;
 
 	Player();

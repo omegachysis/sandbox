@@ -1,7 +1,7 @@
 #include "item.h"
 #include "player.h"
 
-void item::Item::use(Player subject, int index)
+void item::Item::use(Player& subject, int index)
 {
 	if (type == typeWeapon)
 		subject.weapon = *this;
@@ -18,8 +18,8 @@ void item::Item::use(Player subject, int index)
 		}
 		if (condition == 0)
 		{
-			subject.itemRemove(index);
 			cout << "You consumed 1x " << name << ".\n";
+			subject.itemRemove(index);
 		}
 	}
 }

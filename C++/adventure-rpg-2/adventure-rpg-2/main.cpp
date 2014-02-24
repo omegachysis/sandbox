@@ -31,7 +31,7 @@ int main()
 	beat();
 	player.itemAdd(itemdb::banana);
 	beat();
-	player.itemUse("apple");
+	displayInventory(player);
 	beat();
 
 	/*string choice;

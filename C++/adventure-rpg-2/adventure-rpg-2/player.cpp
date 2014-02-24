@@ -7,6 +7,7 @@ Player::Player()
 	healthMax = 100.0;
 	gold = 0.0;
 	capacity = 100.0;
+	std::vector<item::Item> inventory(1000);
 	weapon = item::Item();
 }
 
@@ -66,7 +67,7 @@ bool Player::hasItem(unsigned int index)
 // in order of index will be chosen.
 short Player::itemIndexByName(string name)
 {
-	for (int i = 0; i < 10000; i++)
+	for (int i = 0; i < inventory.size(); i++)
 	{
 		if (inventory[i].name == name)
 			return i;
@@ -92,15 +93,9 @@ void Player::itemUse(string name)
 void Player::itemAdd(item::Item item, unsigned int quantity)
 {
 	cout << "You obtained " << quantity << "x " << item.name << "!\n";
-	for (int i = 0; i < 10000; i++)
+	for (int i = 0; i < quantity; i++)
 	{
-		if (inventory[i].name == "")
-		{
-			inventory[i] = item;
-			quantity--;
-			if (quantity == 0)
-				break;
-		}
+		inventory.push_back(item);
 	}
 }
 // Add a single item.

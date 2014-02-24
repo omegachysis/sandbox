@@ -45,7 +45,7 @@ namespace item
 		short conditionMax;
 		ItemParam params[5];
 
-		void use(Player subject, int index);
+		void use(Player& subject, int index);
 
 		Item();
 		Item(string name, itemType type, gold value, float weight,
