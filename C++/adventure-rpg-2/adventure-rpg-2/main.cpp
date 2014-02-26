@@ -27,9 +27,9 @@ int main()
 
 	beat();
 
-	player.itemAdd(itemdb::apple);
-	beat();
+	player.itemAdd(itemdb::apple, 50);
 	player.itemAdd(itemdb::banana);
+	player.itemAdd(itemdb::woodenSword);
 	beat();
 	displayInventory(player);
 	beat();

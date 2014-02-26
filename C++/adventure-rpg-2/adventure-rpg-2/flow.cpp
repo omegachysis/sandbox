@@ -39,3 +39,11 @@ void flow::displayInventory(Player& player)
 		cout << "  " << i << " - " << player.inventory[i].name << "\n";
 	}
 }
+
+void flow::equipItem(Player& player)
+{
+	flow::hline();
+	std::cout << "EQUIP\n";
+	flow::hline();
+	std::cout << " Current equipment: \n";
+}
