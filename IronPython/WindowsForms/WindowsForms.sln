@@ -7,6 +7,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "WindowsForms", "WindowsForm
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "WindowsForms02", "WindowsForms02\WindowsForms02.pyproj", "{D6541D0E-D645-4FA9-8AB6-227307EAD27A}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "WindowsForms03", "WindowsForms03\WindowsForms03.pyproj", "{5F55F780-B4D2-49B0-B84A-7628EE7B860A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D6541D0E-D645-4FA9-8AB6-227307EAD27A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6541D0E-D645-4FA9-8AB6-227307EAD27A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6541D0E-D645-4FA9-8AB6-227307EAD27A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F55F780-B4D2-49B0-B84A-7628EE7B860A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F55F780-B4D2-49B0-B84A-7628EE7B860A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F55F780-B4D2-49B0-B84A-7628EE7B860A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F55F780-B4D2-49B0-B84A-7628EE7B860A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

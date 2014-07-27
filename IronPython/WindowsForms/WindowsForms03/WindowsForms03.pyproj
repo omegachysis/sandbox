@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>5f55f780-b4d2-49b0-b84a-7628ee7b860a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>WindowsForms03.py</StartupFile>
+    <StartupFile>Part03.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -26,7 +26,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="WindowsForms03.py" />
+    <None Include="Part03.py" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="{80659ab7-4d53-4e0c-8588-a766116cbd46}\2.7" />
