@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{b2a2f4f3-84c8-4dd7-87b8-2583dd876699}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>Direct3D\demo1.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <InterpreterId>{fcc291aa-427c-498c-a4d7-4502d6449b8c}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="License.html" />
+    <Content Include="Samples.css" />
+    <Content Include="ClrType\output.txt" />
+    <Content Include="ClrType\readme.htm" />
+    <Compile Include="ClrType\clrtype.py" />
+    <Compile Include="ClrType\sample.py" />
+    <Content Include="CommentChecker\readme.htm" />
+    <Content Include="CommentChecker\screenshot.jpg" />
+    <Compile Include="CommentChecker\main.py" />
+    <Compile Include="CommentChecker\misspelled.py" />
+    <Compile Include="CommentChecker\spelling.py" />
+    <Content Include="Direct3D\TODO.txt" />
+    <Content Include="Direct3D\readme.htm" />
+    <Content Include="Direct3D\tiger.bmp" />
+    <Compile Include="Direct3D\demo1.py" />
+    <Compile Include="Direct3D\demo2.py" />
+    <Compile Include="Direct3D\demo3.py" />
+    <Compile Include="Direct3D\demo4.py" />
+    <Compile Include="Direct3D\framework.py" />
+    <Compile Include="Direct3D\GravityDemo.py" />
+    <Compile Include="Direct3D\MeshDemo.py" />
+    <Compile Include="Direct3D\tutorial.py" />
+    <Content Include="DiskUse\readme.htm" />
+    <Content Include="DiskUse\Screenshot.jpg" />
+    <Compile Include="DiskUse\app.py" />
+    <Compile Include="DiskUse\dialogutil.py" />
+    <Compile Include="DiskUse\filestruct.py" />
+    <Compile Include="DiskUse\renderers.py" />
+    <Compile Include="DiskUse\uilogic.py" />
+    <Content Include="DynamicWebServiceHelpers\readme.htm" />
+    <Compile Include="DynamicWebServiceHelpers\bing.py" />
+    <Compile Include="DynamicWebServiceHelpers\flickr.py" />
+    <Compile Include="DynamicWebServiceHelpers\injectors.py" />
+    <Compile Include="DynamicWebServiceHelpers\mathservice.py" />
+    <Compile Include="DynamicWebServiceHelpers\rss.py" />
+    <Compile Include="DynamicWebServiceHelpers\stocks.py" />
+    <Compile Include="DynamicWebServiceHelpers\weather.py" />
+    <Content Include="FMsynth\readme.htm" />
+    <Content Include="FMsynth\fmsynth.png" />
+    <Content Include="FMsynth\piano.bmp" />
+    <Compile Include="FMsynth\fmsynth.py" />
+    <Compile Include="FMsynth\fmsynthlib.py" />
+    <Content Include="IPPowerShell\readme.htm" />
+    <Compile Include="IPPowerShell\minsysreq.py" />
+    <Compile Include="IPPowerShell\minsysreq_ps.py" />
+    <Compile Include="IPPowerShell\powershell.py" />
+    <Content Include="IronTunes\readme.htm" />
+    <Compile Include="IronTunes\avalon.py" />
+    <Compile Include="IronTunes\IronTunes.py" />
+    <Compile Include="IronTunes\IronTunesWindow.py" />
+    <Compile Include="IronTunes\Library.py" />
+    <Compile Include="IronTunes\Player.py" />
+    <Compile Include="IronTunes\SearchFilter.py" />
+    <Content Include="Puzzle\readme.htm" />
+    <Content Include="Puzzle\Screenshot.jpg" />
+    <Content Include="Puzzle\banner.bmp" />
+    <Content Include="Puzzle\icon.ico" />
+    <Compile Include="Puzzle\copyright.py" />
+    <Compile Include="Puzzle\loadpanel.py" />
+    <Compile Include="Puzzle\puzzle.py" />
+    <Compile Include="Puzzle\quadkey.py" />
+    <Compile Include="Puzzle\tiles.py" />
+    <Compile Include="Puzzle\winforms.py" />
+    <Content Include="WinFormsMapPoint\tutorial.htm" />
+    <Compile Include="Direct3D\checkpoints\checkpoint1.py" />
+    <Compile Include="Direct3D\checkpoints\checkpoint2.py" />
+    <Compile Include="Direct3D\checkpoints\checkpoint3.py" />
+    <Compile Include="Direct3D\checkpoints\checkpoint4.py" />
+    <Compile Include="Direct3D\checkpoints\checkpoint5.py" />
+    <Compile Include="Direct3D\checkpoints\checkpoint6.py" />
+    <Content Include="Puzzle\cache\cache.txt" />
+    <Content Include="WinFormsMapPoint\WinForms\FormV1.jpg" />
+    <Content Include="WinFormsMapPoint\WinForms\FormV2-1.jpg" />
+    <Content Include="WinFormsMapPoint\WinForms\FormV2.jpg" />
+    <Content Include="WinFormsMapPoint\WinForms\FormV3.jpg" />
+    <Content Include="WinFormsMapPoint\WinForms\FormV4-1.JPG" />
+    <Content Include="WinFormsMapPoint\WinForms\FormV4-2.JPG" />
+    <Content Include="WinFormsMapPoint\WinForms\FormV4.jpg" />
+    <Content Include="WinFormsMapPoint\WinForms\FormV5-1.jpg" />
+    <Content Include="WinFormsMapPoint\WinForms\FormV5-2.jpg" />
+    <Content Include="WinFormsMapPoint\WinForms\FormV6-1.jpg" />
+    <Content Include="WinFormsMapPoint\WinForms\FormV6.jpg" />
+    <Content Include="WinFormsMapPoint\WinForms\FormV7-1.jpg" />
+    <Content Include="WinFormsMapPoint\WinForms\FormV7-2.jpg" />
+    <Content Include="WinFormsMapPoint\WinForms\FormV7-3.jpg" />
+    <Content Include="WinFormsMapPoint\WinForms\FormV8-1.jpg" />
+    <Content Include="WinFormsMapPoint\WinForms\FormV8-2.jpg" />
+    <Content Include="WinFormsMapPoint\WinForms\FormV8-3.jpg" />
+    <Content Include="WinFormsMapPoint\WinForms\App.ico" />
+    <Compile Include="WinFormsMapPoint\WinForms\formV1.py" />
+    <Compile Include="WinFormsMapPoint\WinForms\formV2.py" />
+    <Compile Include="WinFormsMapPoint\WinForms\formV3.py" />
+    <Compile Include="WinFormsMapPoint\WinForms\formv4.py" />
+    <Compile Include="WinFormsMapPoint\WinForms\formV5.py" />
+    <Compile Include="WinFormsMapPoint\WinForms\formv6.py" />
+    <Compile Include="WinFormsMapPoint\WinForms\formv7.py" />
+    <Compile Include="WinFormsMapPoint\WinForms\formv8.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ClrType" />
+    <Folder Include="CommentChecker" />
+    <Folder Include="Direct3D" />
+    <Folder Include="Direct3D\checkpoints" />
+    <Folder Include="DiskUse" />
+    <Folder Include="DynamicWebServiceHelpers" />
+    <Folder Include="FMsynth" />
+    <Folder Include="IPPowerShell" />
+    <Folder Include="IronTunes" />
+    <Folder Include="Puzzle" />
+    <Folder Include="Puzzle\cache" />
+    <Folder Include="WinFormsMapPoint" />
+    <Folder Include="WinFormsMapPoint\WinForms" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{fcc291aa-427c-498c-a4d7-4502d6449b8c}\2.7" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>
