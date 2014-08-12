@@ -6,7 +6,7 @@
     <ProjectGuid>5b3423e2-1d7b-4fa7-b29f-0220bec4fb21</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>Part01.py</StartupFile>
+    <StartupFile>Part05.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -35,6 +35,7 @@
   <ItemGroup>
     <Compile Include="Part02.py" />
     <Compile Include="Part03.py" />
+    <Compile Include="Part05.py" />
     <Compile Include="Part04.py" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
