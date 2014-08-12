@@ -6,7 +6,7 @@
     <ProjectGuid>5b3423e2-1d7b-4fa7-b29f-0220bec4fb21</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>WindowsForms.py</StartupFile>
+    <StartupFile>Part01.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -27,10 +27,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="WindowsForms.py" />
+    <None Include="Part01.py" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="{80659ab7-4d53-4e0c-8588-a766116cbd46}\2.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Part02.py" />
+    <Compile Include="Part03.py" />
+    <Compile Include="Part04.py" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
 </Project>
